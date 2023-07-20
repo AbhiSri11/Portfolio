@@ -35,11 +35,12 @@ body{
 }
 .container1{
     display: flex;
+    /* position: fixed; */
     width: 100%;
     flex-direction: row;
     background-color: white;
     justify-content: space-between;
-    /* background: linear-gradient(125deg,rgb(51, 205, 225),rgb(44, 5, 188)); */
+    background: linear-gradient(125deg,rgb(119, 239, 255),rgb(171, 152, 255));
 }
 .container11{
     margin: 10px 130px;
@@ -66,6 +67,16 @@ body{
     margin: 10px;
 }
 
+@media (max-width: 950px) {
+    .container12{
+        display: none;
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: start; */
+    }
+}
+
+
 
 
 /* container 2 */
@@ -73,8 +84,11 @@ body{
     margin: 0 auto;
     display: flex;
     width: 100%;
+    top: 200px;
     min-height: 100vh;
-    background: rgb(233, 237, 255);
+    /* background: rgb(233, 237, 255); */
+    background: linear-gradient(125deg,rgb(199, 248, 255),rgb(183, 194, 255));
+
     justify-content: space-between;
 }
 .container21{
@@ -147,9 +161,12 @@ button:hover{
     border-radius: 50%;
 }
 
+
+
+
 /* 2nd Page */
 .container3{
-    background-color: rgb(255, 237, 255);
+    background: linear-gradient(125deg,rgb(207, 248, 255),rgb(206, 212, 255));
 }
 .container3 h1{
     padding-top: 20px;
@@ -201,6 +218,21 @@ button:hover{
     font-weight: bold;
     color: white;
 }
+
+@media (max-width: 700px){
+    .container32 img{
+        display: none;
+    }
+    .container322{
+        width: 100%;
+    }
+    .container3{
+        background: rgb(222, 228, 255);
+
+    }
+}
+
+
 
 /* 3rd Page */
 
@@ -266,6 +298,9 @@ button:hover{
     font-family: cursive;
 }
 
+ 
+
+
 /* 4th page */
 
 .container5{
@@ -324,6 +359,13 @@ button:hover{
     margin: 10px;
     font-size: 20px;
 }
+@media (max-width:700px){
+    .container51{
+        width: 90%;
+    }
+}
+
+
 
 /* 5th Page */
 
@@ -351,7 +393,7 @@ button:hover{
     margin-bottom: 20px;
 }
 .container611 img{
-    width: 110%;
+    width: 100%;
     display: flex;
     align-items: center;
     border-radius: 10px 10px 0 0;
@@ -364,7 +406,7 @@ button:hover{
     transition: 1s 0.01s width ;
 }
 .container612{
-    width: 110%;
+    width: 100%;
     text-align: center;
     background: linear-gradient(135deg, #2B236D, #4e085f);
     border-radius: 0 0 10px 10px;
@@ -376,7 +418,7 @@ button:hover{
     text-transform: lowercase;
     margin-bottom: 20px;
     border: none;
-    width: 30%;
+    width:30%;
     padding: 5px 15px;
     margin-left: 10px;
     border-radius: 20px;
@@ -390,7 +432,20 @@ button:hover{
     display: inline-block;
     width: 20%;
 }
+@media (max-width:950px){
+    .container61{
+        /* display: flex; */
+        width: 100%;
+        flex-direction: column;
 
+    }
+    /* .container612{
+        width: 100%;
+    } */
+    .container611{
+        width: 90%;
+    }
+}
 /* 6th Page */
 
 .container7{
@@ -459,6 +514,30 @@ button:hover{
     transition: 1s;
 }
 
+
+@media (max-width:800px){
+    .container71 img{
+        display: none;
+    }
+    .container71{
+        width: 90%;
+    }
+    .container71 form{
+        width: 100%;
+        background: linear-gradient(125deg,rgb(169, 245, 255),rgb(208, 197, 255));
+        /* padding: 0; */
+        /* margin: 0; */
+    }
+    .form_container{
+        width: 100%;
+    }
+    .box1{
+        width: 100%;
+    }
+    
+}
+
+
 /* 7th Page */
 
 .container8{
@@ -523,4 +602,10 @@ hr{
     color: #fff;
     text-align: center;
     padding: 10px 0;
+}
+@media (max-width:800px){
+    .container81{
+        display: flex;
+        flex-direction: column;
+    }
 }
